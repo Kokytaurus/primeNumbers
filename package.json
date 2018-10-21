@@ -1,0 +1,21 @@
+{
+  "name": "prime_multiply",
+  "version": "0.1.0",
+  "description": "Multiply N prime numbers on a table",
+  "main": "src/main.js",
+  "scripts": {
+    "watchify-test": "./node_modules/watchify/bin/cmd.js src/main.js test/test.js -o bundled-test.js",
+    "browserify": "./node_modules/browserify/bin/cmd.js src/main.js > prime-multiplication-table.js",
+    "showprime": "node ./src/result.js"
+  },
+  "dependencies": {
+    "browserify": "^11.0.1",
+    "immutable": "^3.7.4",
+    "redux": "^1.0.1",
+    "text-table": "^0.2.0"
+  },
+  "devDependencies": {
+    "redux-devtools": "^1.0.2",
+    "watchify": "^3.3.1"
+  }
+}
